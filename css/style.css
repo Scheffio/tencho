@@ -1,0 +1,408 @@
+/* General styles import */
+@import url(/css/core.css);
+@import url(/css/header.css);
+@import url(/css/footer.css);
+@import url(/css/zoom.css);
+
+/* Index styles import */
+@import url(/css/index/adventages.css);
+@import url(/css/index/main-banner.css);
+@import url(/css/index/new.css);
+@import url(/css/index/popular.css);
+@import url(/css/index/second-banner.css);
+
+/* Catalogue styles import */
+@import url(/css/catalogue/catalogue.css);
+
+/* About styles import */
+@import url(/css/about/about.css);
+
+/* Cabinet styles import */
+@import url(/css/cabinet/cabinet.css);
+
+/* Login styles import */
+@import url(/css/login/login.css);
+
+/* Registration styles import */
+@import url(/css/registration/registration.css);
+
+/* Product styles import */
+@import url(/css/product/product.css);
+@import url(/css/product/feedback.css);
+
+/* Cart styles import */
+@import url(/css/cart/cart.css);
+
+/* Fonts */
+@font-face {
+    font-family: Montserrat;
+    src: url(/fonts/Montserrat.ttf);
+}
+
+@font-face {
+    font-family: MontserratBold;
+    src: url(/fonts/Montserrat.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: MontserratSemiBold;
+    src: url(/fonts/Montserrat.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Montserrat300;
+    src: url(/fonts/Montserrat.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: MontserratExtraLight;
+    src: url(/fonts/Montserrat.ttf);
+    font-weight: 200;
+}
+
+/* Adaptation */
+
+@media (max-width: 1440px) {
+    .order-content {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .delivery-content, .payment-type, .pay{
+        width: 99%;
+    }
+}
+
+@media (max-width: 1190px) {
+    .product-top > img {
+        width: 342px;
+        height: 369px;
+    }
+    
+    .product-form {
+        width: 82%;
+    }
+
+    .order-block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sizes > * {
+        width: 30px;
+        height: 30px;
+    }
+
+    .info-block {
+        margin-left: 20px;
+    }
+    
+    .same { 
+        width: 90%;
+    }
+
+    .feedback-content {
+        flex-direction: column;
+    }
+
+    .feedback {
+        width: 80%;
+    }
+
+    .feedback-form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1024px) {
+    .order-item {
+        flex-direction: column;
+        width: 99%;
+        height: 150px;
+    }
+
+    .order-item > img {
+        display: none;
+    }
+
+    .delete {
+        width: 100%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .popular {
+        width: 585px;
+        height: 2690px;
+    }
+
+    .second-banner-link, .second-banner {
+        width: 99%;
+    }
+
+    .new {
+        width: 585px;
+        height: 540px;
+    }
+
+    .new-items .item:nth-child(2), .new-items .item:nth-child(3) {
+        display: none;
+    }
+    
+    .footer {   
+        height: 500px;
+    }
+
+    .catalogue {
+        width: 600px;
+        height: 100%;
+        padding-bottom: 20px;
+    }
+
+    .catalogue-items-list {
+        justify-content: center;
+    }
+
+    .about-tencho {
+        width: 90%;
+    }
+
+    .cabinet {
+        width: 600px;
+        height: 1600px;
+    }
+
+    .big-cards, .small-cards {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .back-btn {
+        right: 5px;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .hided-menu {
+        display: block;
+    }
+
+    .registration-form, .login-form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .second-banner-link, .second-banner {
+        width: 95%
+    }
+
+    .text {
+        left: 0;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .hided-menu {
+        display: block;
+    }
+
+    .new {
+        display: none;
+
+    }
+    
+}
+
+@media (max-width: 425px) {
+
+    .offer > p {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .big-cards > .card {
+        width: 320px;
+    }
+
+    .product-top {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .info-block {
+        margin-top: 20px;
+    }
+
+    .info-block p:nth-child(2) {
+        margin-bottom: 15px;
+    }
+
+    .order-block {
+        margin-top: 25px;
+        gap: 20px;
+    }
+
+    .product-about {
+        margin-top: 0;
+    }
+
+    .feedback-item > .item-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item-top > p {
+        margin: 0;
+    }
+
+    .feedback-item {
+        width: auto;
+    }
+
+    .feedback {
+        width: 70%;
+    }
+
+    .feedbacks {
+        gap: 30px;
+    }
+
+    .cabinet {
+        width: 100%;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: 800px;
+        gap: 100px;
+        align-items: center;
+    }
+
+    .back-btn {
+        bottom: 170px;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .hided-menu {
+        display: block;
+    }
+
+    .filter, .avatar {
+        display: none;
+    }
+
+    .catalogue {
+        width: 90%;
+    }
+
+    .popular {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 20px;
+        align-items: center;
+    }
+
+    .items {
+        justify-content: center;
+    }
+
+    .second-banner-link {
+        display: none;
+    }
+
+    .new {
+        display: none;
+    }
+
+    .modal-item {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .offer > a {
+        display: none;
+    }
+
+    .offer > p {
+        font-size: 14px;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+        width: 98%;
+    }
+}
+
+@media (max-width: 320px) {
+    .about-tencho > p > span {
+        padding: 0;
+        letter-spacing: 0;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .big-cards > * {
+        box-sizing: border-box;
+        width: 320px;
+    }
+
+    .sale-counter > p {
+        display: none;
+    }
+
+    .sale-counter {
+        justify-content: center;
+    }
+
+    .form, .reg-form {
+        width: 90%;
+    }
+
+    .form > a:last-child {
+        width: auto;
+        height: 40px;
+        text-align: center;
+    }
+
+    .form > a:last-child::after {
+        display: none;
+    }
+
+    .product-top > img {
+        width: 242px;
+        height: 269px;
+    }
+
+    .feedback {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+
+    .same {
+        width: 100%;
+    }
+}

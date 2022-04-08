@@ -1,0 +1,131 @@
+.feedback {
+    width: 1080px;
+    padding-bottom: 500px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: 0px -2px 2px #00000014, 0px 2px 20px 5px #00000014;
+    padding: 18.5px 45.5px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #5F9D9F;
+    margin-right: 25px;
+}
+
+.feedback-content {
+    display: flex;
+    gap: 138px;
+}
+
+.item-top > p {
+    margin-right: 70px;
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 26px;
+}
+
+.feedback-title {
+    color: black;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.feedback-item {
+    width: 544px;
+}
+
+.feedbacks {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.item-bot > p {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.item-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.form-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feedback-form-title p {
+    font-family: Montserrat;
+    font-weight: 300;
+    margin: 0;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.form-items textarea {
+    width: 274px;
+    height: 136px;
+    border-radius: 10px;
+    border: 2px solid #5F9D9F;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    transition: .3s;
+    outline: 0;
+    padding-left: 15px;
+    padding-top: 10px;
+    resize: none;
+    box-shadow: 0px -2px 2px #00000014, 0px 2px 20px 5px #00000014;
+}
+
+.form-items textarea:invalid {
+    transition: .3s;
+    border: 2px solid #f99494;
+}
+
+.form-items textarea::placeholder {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.form-items > a {
+    background-color: #5F9D9F;
+    width: 180px;
+    height: 52px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-weight: 300;
+    color: white;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px -2px 2px #00000014, 0px 2px 20px 5px #00000014;
+    align-items: center;
+    transition: .3s;
+}
+
+.form-items > a:hover {
+    transition: .3s;
+    background-color: #87B6B7;
+}
+
+.form-items > img {
+    width: 189px;
+    height: 36px;
+}
+
+.star.clicked > path {
+    fill: #5F9D9F;
+}

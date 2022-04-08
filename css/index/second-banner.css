@@ -1,0 +1,41 @@
+.second-banner {
+    background-image: url(/img/banner2.png);
+    width: 1170px;
+    height: 338px;
+    position: relative;
+    border-radius: 10px;
+    border: 5px solid white;
+    box-shadow: 0px -2px 2px #00000014, 0px 2px 20px 5px #00000014;
+}
+
+.second-banner-link {
+    margin-top: 80px;
+}
+
+.text {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    text-align: center;
+    width: 535px;
+    height: 176px;
+}
+
+.second-banner p:first-child {
+    font-family: MontserratBold;
+    font-size: 96px;
+    line-height: 117px;
+    margin: 0;
+    color: white;
+    text-shadow: 0px -2px 2px #00000014, 0px 2px 20px #00000014;
+}
+
+.second-banner p:last-child {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 32px;
+    margin: 0;
+    color: #5F9D9F;
+    text-shadow: 0px -2px 2px #00000014, 0px 2px 20px #00000014;
+}
